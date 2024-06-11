@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo descubra o número</title>
+
+    <link href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Jogo descubra o número</span>
+            </a>
+        </header>
+
+
+        <main>
+            <div class="my-5 text-center border-bottom">
+                <h1 class="display-4 fw-bold text-body-emphasis">Descubra o número</h1>
+                <p class="lead mb-4 text-center justify-content-center">Números podem ser sorteados de 1 a 1000</p>
+                <button type="button" id="btnSortear" class="btn btn-primary btn-lg px-4 me-sm-3">Sortear</button>
+                <div id="div-numero-sorteado" class="texto-destaque">
+                    
+                </div>
+            </div>
+
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <div class="row">
+                    <div class="col">
+                        <input id="iptTentativa" type="text" class="form-control" placeholder="Digite um número de 0 a 100"
+                            aria-label="Tentativa">
+                    </div>
+                    <div class="col">
+                        <button id="btnTentativa" class="btn btn-primary" type="button">Realizar Tentativa</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jogo.js"></script>
+
+</body>
+
+</html>
